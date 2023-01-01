@@ -391,8 +391,8 @@ let isOver=false;
 var countdownNumberEl = document.getElementById('countdown-number');
 var countdown = 500;
 function strNoAccent(a) {
-    var b="áàâäãåçéèêëíïîìñóòôöõúùûüýÁÀÂÄÃÅÇÉÈÊËÍÏÎÌÑÓÒÔÖÕÚÙÛÜÝ",
-        c="aaaaaaceeeeiiiinooooouuuuyAAAAAACEEEEIIIINOOOOOUUUUY",
+    var b="áàâäãåçéèêëíïîìñóòôöõúùûüýÁÀÂÄÃÅÇÉÈÊËÍÏÎÌÑÓÒÔÖÕÚÙÛÜÝ-",
+        c="aaaaaaceeeeiiiinooooouuuuyAAAAAACEEEEIIIINOOOOOUUUUY ",
         d="";
     for(var i = 0, j = a.length; i < j; i++) {
       var e = a.substr(i, 1);
@@ -476,7 +476,7 @@ async function gameOver() {
         document.getElementById('mySvg').setAttribute("opacity", '0');
         countdownNumberEl.textContent = "";
         await sleep(100);
-        var answerCode = document.getElementById("flag").src.slice(28, 30).toUpperCase();
+        let answerCode = document.getElementById("flag").src.slice(28, 30).toUpperCase();
         isOver=true;
         changeColor(answerCode,"red");
         alert("GAME OVER");
@@ -486,7 +486,7 @@ async function gameOver() {
 
 function test(code) {
 	console.log(pays[code]);
-    var answerCode = document.getElementById("flag").src.slice(28, 30).toUpperCase();
+    let answerCode = document.getElementById("flag").src.slice(28, 30).toUpperCase();
 	console.log("answer code " + answerCode)
     if (isOver) {
         return;
