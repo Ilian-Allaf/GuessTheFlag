@@ -1,6 +1,8 @@
 # GuessTheFlag
 
-This is a game made as a project for the Software Engineering class.
+This is a web game made as a project for the Software Engineering class.
+
+Team members : [Tanguy Lichau](https://github.com/TanguyLichau) [Ilian Allaf](https://github.com/Ilian-Allaf) [Quentin Guillard](https://github.com/Incinscible) [Roman Gaignault](https://github.com/Akdrex)
 
 The game includes a local auth using mysql and 2 game modes.
 
